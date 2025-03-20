@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 
 export function AuthLayout() {
   return (
-    <div className="grid min-h-screen grid-cols-2">
+    <div className="grid min-h-screen grid-cols-2 antialiased">
       {/* Coluna esquerda */}
       <div className="border-foreground/5 bg-muted text-muted-foreground flex h-full flex-col justify-between border-r p-10">
         <div className="text-foreground flex items-center gap-3 font-medium">
@@ -17,7 +17,7 @@ export function AuthLayout() {
         </footer>
       </div>
       {/* Coluna direita */}
-      <div className="flex flex-col items-center justify-center">
+      <div className="relative flex flex-col items-center justify-center">
         <Outlet />
       </div>
     </div>
